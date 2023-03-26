@@ -1,0 +1,7 @@
+.github
+.vscode
+src/assets
+node_modules
+coverage
+dist
+*.html

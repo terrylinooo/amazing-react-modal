@@ -1,0 +1,117 @@
+.#{$modal-class} {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 30%);
+
+  &[data-modal-open='true'] {
+    display: flex;
+  }
+
+  &__inner {
+    position: relative;
+    max-width: 590px;
+    margin: 72px 10px;
+    border: 1px solid $modal-outer-border;
+    border-radius: 4px;
+    background: #fff;
+  }
+
+  &__floating-icon-button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: $modal-floating-icon;
+    cursor: pointer;
+  }
+
+  &__body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-width: 320px;
+
+    // header: 40, footer: 60, spacing: 72x2
+    max-height: calc(100vh - 244px);
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 4px 4px 0 0;
+    background: $modal-header-background;
+
+    // .advanced-react-modal__header-title
+    &-title {
+      color: $modal-header-text;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr; // default: 2
+    align-items: center;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+    background-color: $modal-footer-background;
+    column-gap: 10px;
+
+    &[data-grid-columns='1'] {
+      grid-template-columns: 1fr;
+    }
+
+    &[data-grid-columns='3'] {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    // .advanced-react-modal__footer-button
+    &-button {
+      position: relative;
+      width: 100%;
+      min-height: 36px;
+      margin: 0;
+      padding: 0;
+      border: 1px $modal-footer-botton-border solid;
+      border-radius: 4px;
+      background: $modal-footer-botton-background;
+      color: $modal-footer-button-text;
+      cursor: pointer;
+
+      &--confirm {
+        background: $modal-footer-button-focus-background;
+        color: $modal-footer-button-focus-text;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $modal-breaking-point-mobile) {
+  .#{$modal-class} {
+    &__footer {
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+
+      &[data-grid-columns='3'] {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

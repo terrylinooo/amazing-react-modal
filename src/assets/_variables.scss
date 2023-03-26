@@ -1,0 +1,38 @@
+// CSS class naming
+$modal-class: 'advanced-react-modal';
+
+// Breaking point
+$modal-breaking-point-mobile: '768px' !default;
+
+// Basic color scheme. (Message Level: INFO)
+$primary: #007fff !default;
+$blue-10: #002e5d !default;
+$blue-20: #0057ae !default;
+$blue-30: #0170df !default;
+$blue-40: $primary !default;
+$blue-50: #52a8ff !default;
+$blue-60: #81c0ff !default;
+$blue-70: #a4d0fc !default;
+$blue-80: #d1e8ff !default;
+$blue-90: #eaf4ff !default;
+$blue-100: #fff !default;
+$black: #000 !default;
+$black-10: #222 !default;
+$white: #fff !default;
+
+// Color scheme, can be overwrite by Modal themes.
+$modal-outer-border: $blue-30 !default;
+$modal-header-background: $blue-80 !default;
+$modal-header-text: $black-10 !default;
+$modal-floating-icon: $blue-40 !default;
+$modal-footer-background: $blue-80 !default;
+$modal-footer-text: $black-10 !default;
+$modal-footer-botton-background: $white !default;
+$modal-footer-button-text: $blue-40 !default;
+$modal-footer-botton-border: $blue-40 !default;
+$modal-footer-button-hover-background: $blue-30 !default;
+$modal-footer-button-hover-text: $white !default;
+$modal-footer-botton-hover-border: $blue-30 !default;
+$modal-footer-button-focus-background: $blue-40 !default;
+$modal-footer-button-focus-text: $white !default;
+$modal-footer-botton-focus-border: $blue-40 !default;

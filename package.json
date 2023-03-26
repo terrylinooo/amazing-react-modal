@@ -1,0 +1,72 @@
+{
+  "name": "amazing-react-modal",
+  "version": "0.1.0",
+  "description": "Advanced modal dialog components for React.",
+  "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrylinooo/amazing-react-modal.git"
+  },
+  "keywords": [
+    "modal",
+    "dialog",
+    "react"
+  ],
+  "author": "Terry L. ( https:://terryl.in )",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/terrylinooo/amazing-react-modal/issues"
+  },
+  "homepage": "https://reactmodal.com",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/node": "^18.15.10",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.36.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jsdom": "^21.1.1",
+    "prettier": "^2.8.6",
+    "sass": "^1.60.0",
+    "stylelint": "^15.3.0",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1",
+    "vite-plugin-dts": "^2.1.0",
+    "vitest": "^0.29.7"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

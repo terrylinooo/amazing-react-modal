@@ -1,0 +1,22 @@
+.#{$modal-class}__loading {
+  position: relative;
+  display: none;
+
+  &[data-is-open='true'] {
+    display: block;
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &-image {
+    img {
+      max-width: 100%;
+    }
+  }
+}
