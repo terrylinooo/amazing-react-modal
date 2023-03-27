@@ -1,9 +1,9 @@
 import { createPortal } from 'react-dom';
-import { MODAL_CSS, MODAL_INNER_CSS } from '../shared/css-name';
-import { FloatingIconButton, FooterButton } from './modal-buttons';
-import ModalBody from './modal-body';
-import ModalHeader from './modal-header';
-import ModalFooter from './modal-footer';
+import { MODAL_CSS, MODAL_INNER_CSS } from './shared/css-name';
+import { FloatingIconButton, FooterButton } from './components/buttons';
+import Body from './components/body';
+import Header from './components/header';
+import Footer from './components/footer';
 
 type ModalProps = {
   id?: string;
@@ -32,9 +32,9 @@ const Modal = ({ id = '', isOpen = false, classes = '', style = {}, children }: 
   );
 };
 
-Modal.Body = ModalBody;
-Modal.Header = ModalHeader;
-Modal.Footer = ModalFooter;
+Modal.Body = Body;
+Modal.Header = Header;
+Modal.Footer = Footer;
 Modal.FloatingIconButton = FloatingIconButton;
 Modal.FooterButton = FooterButton;
 

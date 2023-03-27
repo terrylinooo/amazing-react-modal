@@ -1,7 +1,7 @@
 import AmazingModal from './amazing-modal';
 import { MESSAGE_MODAL_CSS } from '../shared/css-name';
 
-type MessageModalBodyProps = {
+type MessageBodyProps = {
   text?: string;
   imageUrl?: string;
 };
@@ -22,7 +22,7 @@ type MessageModalProps = {
   footerHeight?: number;
 };
 
-const MessageModalBody = ({ text = '', imageUrl = '' }: MessageModalBodyProps) => {
+const MessageBody = ({ text = '', imageUrl = '' }: MessageBodyProps) => {
   return (
     <div className={MESSAGE_MODAL_CSS}>
       {imageUrl && (
@@ -67,7 +67,7 @@ const MessageModal = ({
       headerHeight={headerHeight}
       footerHeight={footerHeight}
     >
-      <MessageModalBody text={message} imageUrl={imageUrl} />
+      <MessageBody text={message} imageUrl={imageUrl} />
     </AmazingModal>
   );
 };

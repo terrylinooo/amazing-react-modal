@@ -1,4 +1,4 @@
-import Modal from './components/modal';
+import Modal from './modal';
 import AmazingModal from './modals/amazing-modal';
 import MessageModal from './modals/message-modal';
 import './assets/index.scss';

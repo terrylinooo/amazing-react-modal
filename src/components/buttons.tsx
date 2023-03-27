@@ -1,7 +1,7 @@
 import { FOOTER_BUTTON_CSS, FLOATING_ICON_BUTTON_CSS } from '../shared/css-name';
 import { Loading } from './loading';
 
-type ModalFooterButtonProps = {
+type FooterButtonProps = {
   classes?: string;
   style?: React.CSSProperties;
   type?: string;
@@ -35,7 +35,7 @@ export function FooterButton({
   isLoading = false,
   children,
   onClick,
-}: ModalFooterButtonProps) {
+}: FooterButtonProps) {
   return (
     <button
       type="button"

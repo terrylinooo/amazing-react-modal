@@ -1,9 +1,9 @@
 import { FOOTER_CSS } from '../shared/css-name';
 
-type ModalFooterProps = {
+type FooterProps = {
   classes?: string;
-  columns?: number;
   style?: React.CSSProperties;
+  columns?: number;
   children: React.ReactNode;
 };
 
@@ -11,11 +11,11 @@ type ModalFooterProps = {
  * Modal Footer
  *
  * @param prop.classes Custom CSS style class name.
- * @param prop.columns
  * @param prop.style Custom CSS style structure, same to the 'style' attribute in React.
+ * @param prop.columns The number of column.
  * @param prop.children The header title text, or a children component.
  */
-const ModalFooter = ({ classes = '', columns = 2, style = {}, children }: ModalFooterProps) => {
+const Footer = ({ classes = '', style = {}, columns = 2, children }: FooterProps) => {
   return (
     <div className={`${FOOTER_CSS} ${classes}`} style={style} data-grid-columns={columns}>
       {children}
@@ -23,4 +23,4 @@ const ModalFooter = ({ classes = '', columns = 2, style = {}, children }: ModalF
   );
 };
 
-export default ModalFooter;
+export default Footer;

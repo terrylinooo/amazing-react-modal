@@ -1,7 +1,7 @@
-import Modal from '../components/modal';
+import Modal from '../modal';
 import { SUBMISSION_BUTTON_CSS, MESSAGE_MODAL_CSS } from '../shared/css-name';
 
-type AmazingModalBodyProps = {
+type AmazingBodyProps = {
   text?: string;
   imageUrl?: string;
 };
@@ -46,7 +46,7 @@ type AmazingFooterButtonProps = {
   onClick?: React.MouseEventHandler;
 };
 
-const AmazingModalBody = ({ text = '', imageUrl = '' }: AmazingModalBodyProps) => {
+const AmazingBody = ({ text = '', imageUrl = '' }: AmazingBodyProps) => {
   return (
     <div className={MESSAGE_MODAL_CSS}>
       {imageUrl && (
@@ -202,4 +202,4 @@ const AmazingModal = ({
 };
 
 export default AmazingModal;
-export { AmazingModalBody, AmazingFloatingIconButton, AmazingFooterButton };
+export { AmazingBody, AmazingFloatingIconButton, AmazingFooterButton };
