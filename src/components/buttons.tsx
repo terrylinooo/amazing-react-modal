@@ -1,4 +1,8 @@
-import { FOOTER_BUTTON_CSS, FLOATING_ICON_BUTTON_CSS } from '../shared/css-name';
+import {
+  FOOTER_BUTTON_CSS,
+  FLOATING_ICON_BUTTON_CSS,
+  FLOATING_ICON_BODY_CSS,
+} from '../shared/css-name';
 import { Loading } from './loading';
 
 type FooterButtonProps = {
@@ -82,7 +86,7 @@ export function FloatingIconButton({
         }
       }}
     >
-      <span className="icon-body" data-advrm-icon={icon}></span>
+      <span className={FLOATING_ICON_BODY_CSS} data-advrm-icon={icon}></span>
     </button>
   );
 }

@@ -10,6 +10,7 @@ export const BODY_CSS = `${MODAL_CSS}__body`;
 export const HEADER_TITLE_CSS = `${MODAL_CSS}__header-title`;
 export const FOOTER_BUTTON_CSS = `${MODAL_CSS}__footer-button`;
 export const FLOATING_ICON_BUTTON_CSS = `${MODAL_CSS}__floating-icon-button`;
+export const FLOATING_ICON_BODY_CSS = `floating-icon-button__icon-body`;
 export const LOADING_CSS = `${MODAL_CSS}__loading`;
 export const LOADING_INNER_CSS = `${MODAL_CSS}__loading-inner`;
 export const LOADING_TEXT_CSS = `${MODAL_CSS}__loading--text`;

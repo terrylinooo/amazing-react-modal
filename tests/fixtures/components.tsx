@@ -23,3 +23,7 @@ export const Button = () => {
     </button>
   );
 };
+
+export const Span = () => {
+  return <span id="test-span">Test</span>;
+};
